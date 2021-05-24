@@ -1,5 +1,6 @@
 package com.qa.VirventureWebsite.page;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +27,12 @@ public class LoginPage extends TestBase{
 	public WebElement ClickLoginBtn;
 	@FindBy(xpath="//div[@class='warning']")
 	public WebElement warningtext;
+	@FindBy(xpath="//div[@id='welcome']//a[normalize-space()='Logout']")
+	public WebElement logoutBtn;
+	//--------------Under LoginPage----------------
 	
 	
+	//---------------------------------------------------------------------
 	public String validateTitle() {
 		return driver.getTitle();
 	}
@@ -35,14 +40,19 @@ public class LoginPage extends TestBase{
 		JavaScriptUtil.drawBorder(loginPageLable, driver);
 		return loginPageLable.isDisplayed();
 	}
+	
 	public void validateLoginEmptyData() {
 		ClickLoginBtn.click();
 		
 	}
 	
-	public void validateLoginValidData(String email, String pwd) {
+	public void setLoginValidData(String email, String pwd) {
 		txtEmail.sendKeys(email,Keys.TAB);
 		txtPassword.sendKeys(pwd,Keys.TAB);
-		loginpageSubmitBtn.click();
+		ClickLoginBtn.click();
+		WebElement elename=driver.findElement(By.xpath("//div[@id='welcome']//a[text()='Mohammed Irfan']"));
+		String ValidUserID=driver.findElement(By.xpath("//div[@id='welcome']//a[text()='Mohammed Irfan']")).getText();
+		JavaScriptUtil.drawBorder(elename, driver);
+		logoutBtn.click();
 	}
 }

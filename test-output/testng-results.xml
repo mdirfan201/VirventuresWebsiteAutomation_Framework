@@ -1,59 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61320" started-at="2021-05-21T17:09:02Z" finished-at="2021-05-21T17:10:03Z">
+  <suite name="Default suite" duration-ms="20310" started-at="2021-05-24T11:51:26Z" finished-at="2021-05-24T11:51:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61320" started-at="2021-05-21T17:09:02Z" finished-at="2021-05-21T17:10:03Z">
-      <class name="com.qa.VirventureWebsite.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="setExtentReport" is-config="true" duration-ms="259" started-at="2021-05-21T17:09:01Z" finished-at="2021-05-21T17:09:02Z">
+    <test name="Default test" duration-ms="20310" started-at="2021-05-24T11:51:26Z" finished-at="2021-05-24T11:51:46Z">
+      <class name="com.qa.VirventureWebsite.TestCases.TrackOrderTest">
+        <test-method status="PASS" signature="setExtentReport()[pri:0, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e]" name="setExtentReport" is-config="true" duration-ms="252" started-at="2021-05-24T11:51:25Z" finished-at="2021-05-24T11:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtentReport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="setup" is-config="true" duration-ms="32595" started-at="2021-05-21T17:09:02Z" finished-at="2021-05-21T17:09:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e]" name="setup" is-config="true" duration-ms="16540" started-at="2021-05-24T11:51:26Z" finished-at="2021-05-24T11:51:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginPageTitleTest()[pri:1, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="validateLoginPageTitleTest" duration-ms="44" started-at="2021-05-21T17:09:34Z" finished-at="2021-05-21T17:09:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="tearDown" is-config="true" duration-ms="268" started-at="2021-05-21T17:09:34Z" finished-at="2021-05-21T17:09:34Z">
+        <test-method status="PASS" signature="validateDataFields(java.lang.String, java.lang.String)[pri:3, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e]" name="validateDataFields" duration-ms="3015" started-at="2021-05-24T11:51:43Z" data-provider="getExcelData" finished-at="2021-05-24T11:51:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginPageTitleTest status=SUCCESS method=LoginPageTest.validateLoginPageTitleTest()[pri:1, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041] output={null}]]]>
+                <![CDATA[irfanullah@bosontech.ai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ABC-XYZ123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDataFields -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e]" name="tearDown" is-config="true" duration-ms="322" started-at="2021-05-24T11:51:46Z" finished-at="2021-05-24T11:51:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateDataFields status=SUCCESS method=TrackOrderTest.validateDataFields(java.lang.String, java.lang.String)[pri:3, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="setup" is-config="true" duration-ms="28030" started-at="2021-05-21T17:09:34Z" finished-at="2021-05-21T17:10:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLoginPageLableTest()[pri:2, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="verifyLoginPageLableTest" duration-ms="112" started-at="2021-05-21T17:10:02Z" finished-at="2021-05-21T17:10:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageLableTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="tearDown" is-config="true" duration-ms="251" started-at="2021-05-21T17:10:03Z" finished-at="2021-05-21T17:10:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginPageLableTest status=SUCCESS method=LoginPageTest.verifyLoginPageLableTest()[pri:2, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearExtent()[pri:0, instance:com.qa.VirventureWebsite.TestCases.LoginPageTest@5e4c8041]" name="tearExtent" is-config="true" duration-ms="293" started-at="2021-05-21T17:10:03Z" finished-at="2021-05-21T17:10:03Z">
+        <test-method status="PASS" signature="tearExtent()[pri:0, instance:com.qa.VirventureWebsite.TestCases.TrackOrderTest@d83da2e]" name="tearExtent" is-config="true" duration-ms="399" started-at="2021-05-24T11:51:46Z" finished-at="2021-05-24T11:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearExtent -->
-      </class> <!-- com.qa.VirventureWebsite.TestCases.LoginPageTest -->
+      </class> <!-- com.qa.VirventureWebsite.TestCases.TrackOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
