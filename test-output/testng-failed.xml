@@ -3,15 +3,32 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.VirventureWebsite.TestCases.RegisterAccountTest">
+      <class name="com.qa.VirventureWebsite.TestCases.HomePageTest">
         <methods>
+          <include name="validateFastMovingProductsLinkTes"/>
+          <include name="validateHomePageCartLinkTest"/>
           <include name="tearDown"/>
+          <include name="validateHomePageBannerLinkTest"/>
+          <include name="validateSearchBtnEmptyTest"/>
+          <include name="tearExtentReport"/>
+          <include name="setupExtentReport"/>
+          <include name="validateHomePageCustomerSayLinkTest"/>
+          <include name="validateHomePageTrackOrderLinkTest"/>
+          <include name="validateHomePageFooterSocialMediaLinkTest"/>
+          <include name="validateHomePageCreateAccountBtnTest"/>
           <include name="setup"/>
-          <include name="setExtentReport"/>
-          <include name="validateLoginWithEmptyDateTest"/>
-          <include name="tearExtent"/>
+          <include name="validateHomePageWishListBtnTest"/>
+          <include name="validateForgotPageLinkTest"/>
+          <include name="validateHomePageMyAccountLinkTest"/>
+          <include name="validateHomePageContactUsLinkTest"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="validateSearchBtnWithValidDataTest"/>
+          <include name="validateHomePageFooterUnderMyAccountLinkTest"/>
+          <include name="validateHomePageLoginBtnTest"/>
+          <include name="validateHomePageFooterUnderInformatioLinkTest"/>
+          <include name="verifyingHomePageLogoTest"/>
         </methods>
-      </class> <!-- com.qa.VirventureWebsite.TestCases.RegisterAccountTest -->
+      </class> <!-- com.qa.VirventureWebsite.TestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
